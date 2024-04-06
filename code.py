@@ -9,8 +9,6 @@ from torch.utils.data import DataLoader
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-##### PROVIDED CODE #####
-
 def tokenize(
     text: "list[str]", max_length: int = None, normalize: bool = True
 ) -> "list[list[str]]":
@@ -46,9 +44,6 @@ def tokens_to_ix(
     return [
         [index_map[word] for word in words if word in index_map] for words in tokens
     ]
-
-
-##### END PROVIDED CODE #####
 
 class CharSeqDataloader():
     def __init__(self, filepath, seq_len, examples_per_epoch):

@@ -76,8 +76,8 @@ To train either the CharCNN or CharLSTM model, execute the `main.py` script with
 
 **Example**:
 
-```bash
-python main.py --model lstm --data data/sherlock.txt --epochs 50 --batch_size 64
+  ```bash
+  python main.py --model lstm --data data/sherlock.txt --epochs 50 --batch_size 64
 
 Arguments:
 
@@ -93,8 +93,8 @@ Arguments:
 After training, the models can generate text based on an initial prompt. Use the main.py script with the --generate flag.
 
 Example:
-```bash
-python main.py --model lstm --generate "Once upon a time" --length 200
+  ```bash
+  python main.py --model lstm --generate "Once upon a time" --length 200
 
 Arguments:
 
@@ -114,17 +114,17 @@ torchtext
 argparse
 
 You can install them using pip:
-```bash
-pip install numpy torch torchtext argparse
+  ```bash
+  pip install numpy torch torchtext argparse
 
 Results
 The trained models demonstrate the ability to generate text that mimics the style and structure of the training data. For instance, after training on Shakespearean plays, the CharLSTM model can produce outputs resembling Shakespeare's writing style, complete with archaic language and iambic pentameter.
 
 Sample Output:
-```bash
-To be, or not to be: that is the question:
-Whether 'tis nobler in the mind to suffer
-The slings and arrows of outrageous fortune,
-Or to take arms against a sea of troubles,
-And by opposing end them?
+  ```bash
+  To be, or not to be: that is the question:
+  Whether 'tis nobler in the mind to suffer
+  The slings and arrows of outrageous fortune,
+  Or to take arms against a sea of troubles,
+  And by opposing end them?
 

@@ -76,11 +76,7 @@ To train either the CharCNN or CharLSTM model, execute the `main.py` script with
 
 **Example**:
 
-  ```bash
   python main.py --model lstm --data data/sherlock.txt --epochs 50 --batch_size 64
-
-
-
 
 Arguments:
 
@@ -96,13 +92,7 @@ Arguments:
 After training, the models can generate text based on an initial prompt. Use the main.py script with the --generate flag.
 
 Example:
-  ```bash
   python main.py --model lstm --generate "Once upon a time" --length 200
-
-
-
-
-
 
 Arguments:
 
@@ -122,11 +112,7 @@ torchtext
 argparse
 
 You can install them using pip:
-  ```bash
   pip install numpy torch torchtext argparse
-
-
-
 
 
 
